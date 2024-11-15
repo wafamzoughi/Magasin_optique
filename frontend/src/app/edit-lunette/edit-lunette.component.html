@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Modifier les détails du lunette</h2>
+    <form [formGroup]="formLunette" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="Marque">Marque</label>
+        <input formControlName="Marque" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Type">Type</label>
+        <select formControlName="Type" class="form-control">
+          <option value="Solaire">Solaire</option>
+          <option value="Medical">Medical</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Prix">Prix</label>
+        <input formControlName="Prix" type="number" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="Fume">Fumé</label>
+        <textarea formControlName="Fume" type="chekbox" class="form-control"></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary" (click)="submit()">Edit</button>
+    </form>
+  </div>

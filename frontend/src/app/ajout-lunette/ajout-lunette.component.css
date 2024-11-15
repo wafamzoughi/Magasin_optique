@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    position: relative;
+    min-height: 100%;
+    width: 60%; /* Largeur de 60% par rapport à la fenêtre */
+    margin: 0 auto; /* Centrage horizontal */
+  }
+  
+  .form-container {
+    max-width: 500px; /* Largeur maximale du formulaire */
+    width: 50%;/* Largeur de 60% par rapport à son conteneur parent */
+    padding: 30px;
+    background-color: #fff; /* Fond blanc */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    position: absolute; /* Position absolue */
+    top: 50%; /* Position verticale à 50% du haut de son conteneur parent */
+    left: 20%; /* Décalage de 20% de la gauche de la fenêtre */
+    transform: translateY(-50%); /* Décalage vertical de 50% de la taille du conteneur */
+    right: 20%; /* Décalage de 20% de la droite de la fenêtre */
+  }
+  
+  /* Style des groupes de champs */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style des étiquettes */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Style des champs de texte et de sélection */
+  input[type="text"],
+  select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style de la case à cocher */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Style du bouton Envoyer */
+  button[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #28a745; /* Vert */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838; /* Vert plus foncé au survol */
+  }
+  
+  h1 {
+    text-align: center; /* Centrage horizontal pour le titre */
+  }
+  

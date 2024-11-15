@@ -1,0 +1,30 @@
+/* Style du tableau */
+.table {
+    width: 100%;
+    background-color: rgb(187, 239, 222); 
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour la profondeur */
+  }
+  
+  /* Style des en-têtes de colonne */
+  .table th {
+    background-color: rgb(187, 239, 222);
+    color: #212529; /* Couleur du texte */
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6; /* Bordure inférieure */
+  }
+  
+  /* Style des cellules */
+  .table td {
+    background-color: rgb(187, 239, 222);
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6; /* Bordure inférieure */
+  }
+  
+
+  
+  
+  

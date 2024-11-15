@@ -1,0 +1,23 @@
+<table class="table ">
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>Marque</th>
+    <th>Type</th>
+    <th>Prix</th>
+    <th>Fumé</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let lunette of lunettes">
+    <td>{{ lunette.id }}</td>
+    <td>{{ lunette.Marque }}</td>
+    <td>{{ lunette.Type }}</td>
+    <td>{{ lunette.Prix }}</td>
+    <td>{{ lunette.Fume  }}</td>
+    <td>{{ lunette.Image }}</td>
+    <button (click)="editLunette(lunette)" class=" mx-3 btn btn-info">Edit</button>
+    <button (click)="deleteLunette(lunette)" class=" mx-3 btn btn-danger">Delete</button>
+    </tr>
+    </tbody>
+    </table>
+    
